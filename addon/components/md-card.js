@@ -6,6 +6,6 @@ const { Component } = Ember;
 export default Component.extend({
   layout,
 
-  classNames: ['card'],
+  classNames: ['card', 'z-depth-' + this.get('z-depth')],
   classNameBinding: 'class'
 });
